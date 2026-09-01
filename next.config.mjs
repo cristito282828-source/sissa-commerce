@@ -81,6 +81,8 @@ const nextConfig = {
 };
 
 // Sentry configuration
+// Disable auto-instrumentation of middleware to avoid bundling Sentry
+// into the Edge runtime which can cause MIDDLEWARE_INVOCATION_FAILED.
 export default withSentryConfig(nextConfig, {
   // Para más opciones de configuración: https://github.com/getsentry/sentry-webpack-plugin#options
 
@@ -99,7 +101,10 @@ export default withSentryConfig(nextConfig, {
   // Automáticamente anotar errores con información adicional
   webpack: {
     autoInstrumentServerFunctions: true,
-    autoInstrumentMiddleware: true,
+    // IMPORTANT: disable middleware instrumentation to keep Sentry out
+    // of the Edge runtime/middleware bundle. Re-enable only if you
+    // confirm Sentry supports your Edge runtime and Vercel limits.
+    autoInstrumentMiddleware: false,
     treeshake: {
       removeDebugLogging: true,
     },

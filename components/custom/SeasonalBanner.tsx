@@ -1,6 +1,7 @@
-'use client';
+ 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -52,7 +53,7 @@ export default function SeasonalBanner() {
       <Slider {...settings}>
         {slides.map((slide) => (
           <div key={slide.id} className="relative h-[70vh] min-h-[520px] overflow-hidden">
-            <a href="/search" className="absolute inset-0 block">
+            <Link href="/search" className="absolute inset-0 block">
               <Image
                 src={slide.image}
                 alt={slide.title}
@@ -62,7 +63,7 @@ export default function SeasonalBanner() {
                 sizes="100vw"
               />
               <span className="sr-only">Ver catálogo</span>
-            </a>
+            </Link>
           </div>
         ))}
       </Slider>

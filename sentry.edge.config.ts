@@ -1,11 +1,8 @@
-import * as Sentry from '@sentry/nextjs';
+// Edge Sentry initialization disabled to avoid bundling heavy
+// `@sentry/nextjs` code into Next.js middleware/Edge runtime.
+// If you need Sentry for Edge functions, re-enable carefully
+// and ensure the package and config are compatible with the
+// Edge runtime and Vercel limits.
 
-Sentry.init({
-  dsn: process.env.NEXT_PUBLIC_SENTRY_DSN,
-
-  // Ajustar el sample rate según necesidad (0.0 a 1.0)
-  tracesSampleRate: 0.1,
-
-  // Solo habilitar en producción
-  enabled: process.env.NODE_ENV === 'production',
-});
+// noop export to keep file present but avoid importing Sentry
+export {};

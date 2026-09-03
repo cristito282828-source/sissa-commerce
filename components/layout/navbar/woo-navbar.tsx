@@ -8,7 +8,7 @@ import { WooNavbarClient } from './woo-navbar-client';
  * Server component que carga datos y pasa al client component
  */
 
-const SITE_NAME = process.env.SITE_NAME || 'Lorem Ipsum Store';
+const SITE_NAME = process.env.SITE_NAME || 'Sissa Productos Naturales';
 
 // Usar cache para evitar múltiples llamadas a getCategories
 const getCategories = cache(async () => {

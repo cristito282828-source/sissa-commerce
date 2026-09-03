@@ -14,11 +14,11 @@ type HeroSectionProps = {
 };
 
 export default function HeroSection({
-  title = 'Lorem ipsum dolor sit amet',
-  description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+  title = 'Productos naturales para vivir mejor',
+  description = 'Descubre suplementos, hierbas y soluciones naturales para cuidar tu salud, energía y bienestar diario.',
   image = 'https://images.unsplash.com/photo-141687957682-63fb69739953?w=1920&q=80',
-  buttonText = 'Lorem ipsum',
-  buttonText2 = 'Dolor sit amet',
+  buttonText = 'Ver catálogo',
+  buttonText2 = 'Más información',
   buttonUrl = '#',
   buttonUrl2 = '#'
 }: HeroSectionProps) {

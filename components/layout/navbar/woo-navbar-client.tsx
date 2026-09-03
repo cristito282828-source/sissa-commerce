@@ -297,10 +297,20 @@ export function WooNavbarClient({ categories, SITE_NAME }: WooNavbarClientProps)
               prefetch={true}
               className="mr-2 flex w-full items-center justify-center md:w-auto lg:mr-6"
             >
-              <div className="flex h-16 w-16 flex-none items-center justify-center rounded-lg border border-gray-700 bg-gray-800">
-                <span className="text-sm font-semibold uppercase tracking-[0.15em] text-white">
-                  STORE
-                </span>
+              <div className="flex items-center gap-3">
+                <div className="flex h-11 w-11 flex-none items-center justify-center rounded-full border border-white/20 bg-white/10 shadow-sm backdrop-blur-sm">
+                  <span className="text-base font-semibold tracking-[0.2em] text-white">
+                    S
+                  </span>
+                </div>
+                <div className="hidden sm:block text-left leading-none">
+                  <div className="text-[10px] font-medium uppercase tracking-[0.28em] text-white/60">
+                    productos
+                  </div>
+                  <div className="mt-1 text-lg font-semibold tracking-[0.22em] text-white">
+                    SISSA
+                  </div>
+                </div>
               </div>
             </Link>
 

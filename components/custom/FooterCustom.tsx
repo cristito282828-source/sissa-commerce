@@ -42,11 +42,11 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-4 mb-4">
               <div className="text-3xl font-bold tracking-wider">
-                <span className="text-white">Lorem Ipsum Store</span>
+                <span className="text-white">Sissa</span>
               </div>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Productos naturales para apoyar tu bienestar, energía y una vida más saludable cada día.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
@@ -110,14 +110,14 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-gray-400 flex-shrink-0" />
-                <a href="tel:+18000000000" className="text-gray-400 hover:text-white transition-colors duration-200">
-                  +1 800 000 0000
+                <a href="https://wa.me/573222133447" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
+                  +57 322 2133447
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-gray-400 flex-shrink-0" />
-                <a href="mailto:support@example.com" className="text-gray-400 hover:text-white transition-colors duration-200">
-                  support@example.com
+                <a href="mailto:sissaproductosnaturales@gmail.com" className="text-gray-400 hover:text-white transition-colors duration-200">
+                  sissaproductosnaturales@gmail.com
                 </a>
               </div>
             </div>

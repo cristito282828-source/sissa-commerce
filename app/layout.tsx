@@ -8,19 +8,19 @@ import { JsonLdScript } from '@/lib/json-ld-script';
 
 export const metadata: Metadata = {
   title: {
-    default: 'Lorem Ipsum Store',
-    template: '%s | Lorem Ipsum Store'
+    default: 'Sissa Productos Naturales',
+    template: '%s | Sissa Productos Naturales'
   },
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  keywords: ['lorem', 'ipsum', 'dolor', 'sit amet', 'consectetur', 'adipiscing'],
-  authors: [{ name: 'Lorem Ipsum Store' }],
+  description: 'Productos naturales, suplementos y bienestar para vivir con más energía, salud y equilibrio.',
+  keywords: ['productos naturales', 'suplementos', 'salud', 'bienestar', 'natural', 'sissa'],
+  authors: [{ name: 'Sissa Productos Naturales' }],
   openGraph: {
     type: 'website',
     locale: 'es_ES',
     url: 'https://example.com',
-    siteName: 'Lorem Ipsum Store',
-    title: 'Lorem Ipsum Store - Ejemplo de tienda online',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    siteName: 'Sissa Productos Naturales',
+    title: 'Sissa Productos Naturales',
+    description: 'Descubre productos naturales para salud, bienestar y estilo de vida.',
   },
 };
 

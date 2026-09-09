@@ -168,7 +168,9 @@ export default function FeaturedProducts({ products, title = 'Productos destacad
           </div>
 
           <Link
-            href="/search"
+            href="https://vitalhealthglobal.com/collections/all?refID=155607"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center text-sm font-medium text-stone-700 transition-colors hover:text-stone-900"
           >
             Ver todos <span className="ml-2">→</span>
@@ -206,7 +208,7 @@ export default function FeaturedProducts({ products, title = 'Productos destacad
                 key={`${product.slug}-${index}`}
                 className="group snap-start shrink-0 w-[82%] sm:w-[46%] lg:w-[31%]"
               >
-                <Link href={`/product/${product.slug}`} className="block">
+                <Link href="https://vitalhealthglobal.com/collections/all?refID=155607" target="_blank" rel="noopener noreferrer" className="block">
                   <div className="overflow-hidden rounded-[1.5rem] border border-stone-200 bg-white transition-shadow duration-300 hover:shadow-[0_20px_40px_rgba(0,0,0,0.06)]">
                     <div className="relative aspect-[4/5] overflow-hidden bg-stone-100">
                       <Image
@@ -258,7 +260,9 @@ export default function FeaturedProducts({ products, title = 'Productos destacad
 
         <div className="mt-8 flex justify-center">
           <Link
-            href="/search"
+            href="https://vitalhealthglobal.com/collections/all?refID=155607"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-full bg-[#1d3a2b] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#264d3b]"
           >
             Ver todos

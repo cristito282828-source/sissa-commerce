@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect, useRef } from 'react';
 import { Bars3Icon, MagnifyingGlassIcon } from '@heroicons/react/24/outline';
@@ -279,10 +280,10 @@ export function WooNavbarClient({ categories, SITE_NAME }: WooNavbarClientProps)
 
   return (
     <>
-      <nav className={`flex items-center justify-between border-b backdrop-blur-sm p-4 lg:px-6 transition-all duration-300 fixed top-0 left-0 right-0 z-50 ${
+      <nav className={`fixed left-0 right-0 top-0 z-50 flex items-center justify-between border-b p-4 backdrop-blur-sm transition-all duration-300 lg:px-6 ${
         isScrolled
-          ? 'border-gray-700 bg-gray-900/95 shadow-lg'
-          : 'border-transparent bg-transparent shadow-none'
+          ? 'border-[#2f5a47] bg-[#1d3a2b]/90 shadow-lg'
+          : 'border-transparent bg-[#1d3a2b]/75 shadow-none'
       }`}>
         {/* Mobile Menu Button */}
         <div className="block flex-none md:hidden">
@@ -298,10 +299,15 @@ export function WooNavbarClient({ categories, SITE_NAME }: WooNavbarClientProps)
               className="mr-2 flex w-full items-center justify-center md:w-auto lg:mr-6"
             >
               <div className="flex items-center gap-3">
-                <div className="flex h-11 w-11 flex-none items-center justify-center rounded-full border border-white/20 bg-white/10 shadow-sm backdrop-blur-sm">
-                  <span className="text-base font-semibold tracking-[0.2em] text-white">
-                    S
-                  </span>
+                <div className="flex h-12 w-12 flex-none items-center justify-center overflow-hidden rounded-full border border-white/20 bg-white/10 shadow-sm backdrop-blur-sm">
+                  <Image
+                    src="/shocked-young-female-gardener-uniform-wearing-gardening-hat-holds-broken-hot-pepper-isolated-green-wall-with-copy-space.jpg"
+                    alt="Sissa logo"
+                    width={48}
+                    height={48}
+                    className="h-full w-full object-cover"
+                    priority
+                  />
                 </div>
                 <div className="hidden sm:block text-left leading-none">
                   <div className="text-[10px] font-medium uppercase tracking-[0.28em] text-white/60">

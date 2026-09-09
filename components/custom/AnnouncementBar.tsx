@@ -15,13 +15,11 @@ const AnnouncementBar = ({
   }
 
   return (
-    <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white text-sm font-semibold h-10 w-full border-b border-gray-700 shadow-md">
-      <div className="h-full flex justify-center items-center text-center px-4 max-w-7xl mx-auto">
-        <div className="flex items-center gap-2 flex-wrap justify-center">
-          <span className="text-green-400">✓</span>
-          <span className="tracking-wide">
-            {text}
-          </span>
+    <div className="h-10 w-full border-b border-[#2f5a47] bg-[#1d3a2b]/95 text-white shadow-md">
+      <div className="mx-auto flex h-full max-w-7xl items-center justify-center px-4 text-center">
+        <div className="flex flex-wrap items-center justify-center gap-2">
+          <span className="text-emerald-300">✓</span>
+          <span className="text-sm font-semibold tracking-wide">{text}</span>
         </div>
       </div>
     </div>

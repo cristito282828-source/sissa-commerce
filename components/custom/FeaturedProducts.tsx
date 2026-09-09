@@ -171,7 +171,7 @@ export default function FeaturedProducts({ products, title = 'Productos destacad
             href="/search"
             className="inline-flex items-center justify-center text-sm font-medium text-stone-700 transition-colors hover:text-stone-900"
           >
-            Ver más <span className="ml-2">→</span>
+            Ver todos <span className="ml-2">→</span>
           </Link>
         </div>
 
@@ -254,6 +254,15 @@ export default function FeaturedProducts({ products, title = 'Productos destacad
           >
             <ChevronRight className="h-4 w-4 text-stone-700" />
           </button>
+        </div>
+
+        <div className="mt-8 flex justify-center">
+          <Link
+            href="/search"
+            className="inline-flex items-center justify-center rounded-full bg-[#1d3a2b] px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#264d3b]"
+          >
+            Ver todos
+          </Link>
         </div>
       </div>
 
